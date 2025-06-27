@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Beef Bar - เมนูและข้อมูลร้าน</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header-bg {
+            background-image: url('https://placehold.co/1200x400/333333/ffffff?text=BEYOND+BEEF+BAR');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .menu-category-title {
+            position: sticky;
+            top: 0;
+            background-color: #f8f8f8;
+            z-index: 10;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-bg">
+        <div class="header-overlay"></div>
+        <div class="relative z-10 text-white p-4">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-wider">BEYOND BEEF BAR</h1>
+            <p class="text-xl md:text-2xl mt-4 font-light">Grill First, Enjoy Later!</p>
+            <p class="mt-2 text-lg">Open Everyday 4:00 - 11:00 PM</p>
+        </div>
+    </header>
+
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-20 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-center md:justify-between items-center text-sm md:text-base">
+            <a href="#about" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">เกี่ยวกับเรา</a>
+            <a href="#yakinku" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">Yakiniku</a>
+            <a href="#thai-hotpot" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">Thai Hotpot</a>
+            <a href="#yakitori" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">Yakitori</a>
+            <a href="#salad-soup" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">Salad & Soup</a>
+            <a href="#appetizer" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">Appetizer</a>
+            <a href="#spicy" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">Spicy</a>
+            <a href="#dish-meal" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">จานเดียว</a>
+            <a href="#isaan-food" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">อาหารอีสาน</a>
+            <a href="#vegetarian" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">มังสวิรัติ</a>
+            <a href="#drinks" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">เครื่องดื่ม</a>
+            <a href="#dessert" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors duration-200">ของหวาน</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">เกี่ยวกับเรา</h2>
+            <div class="md:flex md:space-x-8 items-center">
+                <div class="md:w-1/2 mb-4 md:mb-0">
+                    <img src="https://placehold.co/600x400/4ECDC4/ffffff?text=Beyond+Beef+Bar+Interior" alt="Beyond Beef Bar Interior" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-4">
+                        ยินดีต้อนรับสู่ Beyond Beef Bar ร้านอาหารยากินิคุและฮอทพอทสไตล์ญี่ปุ่นและไทย ที่คัดสรรวัตถุดิบคุณภาพดีที่สุดมาให้คุณได้ลิ้มลอง
+                        เราเปิดให้บริการทุกวันตั้งแต่เวลา 16:00 น. - 23:00 น.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        <span class="font-semibold text-red-600">คำเตือน:</span> โปรดตรวจสอบให้แน่ใจว่าได้ปรุงเนื้อของคุณให้สุกก่อนรับประทาน การปรุงอาหารให้สุกทั่วถึงจะช่วยกำจัดแบคทีเรีย และเป็นสิ่งสำคัญในการให้ความสำคัญกับความปลอดภัยของอาหาร
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-lg">
+                        <span class="flex items-center"><img src="https://placehold.co/20x20/333333/ffffff?text=F" class="mr-2"> FACEBOOK</span>
+                        <span class="flex items-center"><img src="https://placehold.co/20x20/333333/ffffff?text=I" class="mr-2"> INSTAGRAM</span>
+                        <span class="flex items-center"><img src="https://placehold.co/20x20/333333/ffffff?text=P" class="mr-2"> +669-2182-4326 Call, Whatsapp</span>
+                        <span class="flex items-center"><img src="https://placehold.co/20x20/333333/ffffff?text=@" class="mr-2"> @Beyondbeefandbar ladkrabang</span>
+                    </div>
+                     <div class="mt-4 flex flex-wrap items-center justify-center md:justify-start gap-4 text-lg">
+                        <span class="font-semibold mr-2">WE ACCEPT:</span>
+                        <img src="https://placehold.co/50x30/4ECDC4/ffffff?text=VISA" alt="Visa" class="h-6">
+                        <img src="https://placehold.co/50x30/4ECDC4/ffffff?text=MasterCard" alt="MasterCard" class="h-6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="yakinku" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">YAKINIKU</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">1) Pork Set - เซ็ตหมู</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">449.-</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Pork 150 g - หมูสันคอ</li>
+                        <li>Belly Pork 150 g - หมูสามชั้น</li>
+                        <li>Chicken Sausage - ไส้กรอกไก่</li>
+                        <li>Vegetable Set - ชุดผัก</li>
+                        <li>2 Japanese Rice bowls - ข้าวญี่ปุ่น</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">2) Mix Set - เซ็ตหมู-เนื้อ</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">579.-</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Top Round 150 g - พับใน</li>
+                        <li>Pork 150 g - หมูสันคอ</li>
+                        <li>Chicken Sausage - ไส้กรอกไก่</li>
+                        <li>Vegetable Set - ชุดผัก</li>
+                        <li>2 Japanese Rice bowls - ข้าวญี่ปุ่น</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">3) Beef Set - เซ็ตเนื้อ</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">779.-</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Top Round 150 g - เนื้อพับใน</li>
+                        <li>Knuckle 150 g - เนื้อลูกมะพร้าว</li>
+                        <li>Bavette 50 g - เนื้อบาเว็ต</li>
+                        <li>Vegetable Set - ชุดผัก</li>
+                        <li>2 Japanese Rice bowls - ข้าวญี่ปุ่น</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mt-8 mb-4 text-center">Small Set Favorites (Good for one)</h3>
+            <p class="text-center text-gray-600 mb-6">Small Set ประกอบด้วย: เนื้อสัตว์ (เลือกได้), ข้าวญี่ปุ่น, สลัด, ซุปมิโสะ</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">4) Pork Set 100 g - ชุดหมูสันคอ</p><p class="text-gray-700">199.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">5) Pork Set 150 g - ชุดหมูสันคอ</p><p class="text-gray-700">269.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">6) Belly Pork Set 100 g - ชุดหมูสามชั้น</p><p class="text-gray-700">199.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">7) Belly Pork Set 150 g - ชุดหมูสามชั้น</p><p class="text-gray-700">269.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">8) Chuck Arm Set 100 g - ชุดเนื้อรักบี้</p><p class="text-gray-700">239.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">9) Chuck Arm Set 150 g - ชุดเนื้อรักบี้</p><p class="text-gray-700">339.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">10) Bavette Set 100 g - ชุดเนื้อบาเว็ต</p><p class="text-gray-700">289.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">11) Bavette Set 150 g - ชุดเนื้อบาเว็ต</p><p class="text-gray-700">389.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">12) Oyster Blade Set 100 g - ชุดเนื้อใบพาย</p><p class="text-gray-700">369.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold">13) Oyster Blade Set 150 g - ชุดเนื้อใบพาย</p><p class="text-gray-700">549.-</p>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mt-8 mb-4 text-center">BBQ A La Carte (Yakiniku)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">14) BBQ Beef Tongue 50 g - ลิ้นวัว</p><p class="text-gray-700">99.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">15) BBQ Beef Tongue 100 g - ลิ้นวัว</p><p class="text-gray-700">189.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">16) BBQ Beef Brisket 50 g - เสือร้องไห้</p><p class="text-gray-700">99.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">17) BBQ Beef Brisket 100 g - เสือร้องไห้</p><p class="text-gray-700">179.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">18) BBQ Beef Knuckle 50 g - ลูกมะพร้าว</p><p class="text-gray-700">99.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">19) BBQ Beef Knuckle 100 g - ลูกมะพร้าว</p><p class="text-gray-700">179.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">20) BBQ Beef Chuck Arm 50 g - รักบี้</p><p class="text-gray-700">109.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">21) BBQ Beef Chuck Arm 100 g - รักบี้</p><p class="text-gray-700">199.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">22) BBQ Beef Bavette 50 g - เนื้อบาเว็ต</p><p class="text-gray-700">139.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">23) BBQ Beef Bavette 100 g - เนื้อบาเว็ต</p><p class="text-gray-700">259.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">24) BBQ Beef Picanha 50 g - พิคานย่า</p><p class="text-gray-700">169.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">25) BBQ Beef Picanha 100 g - พิคานย่า</p><p class="text-gray-700">309.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">26) BBQ Beef Chuck 50 g - เนื้อสันคอ</p><p class="text-gray-700">189.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">27) BBQ Beef Chuck 100 g - เนื้อสันคอ</p><p class="text-gray-700">349.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">28) BBQ Beef Oyster Blade 50 g - ใบพาย</p><p class="text-gray-700">189.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">29) BBQ Beef Oyster Blade 100 g - ใบพาย</p><p class="text-gray-700">349.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">30) BBQ Beef Ribeye 50 g - ริบอาย</p><p class="text-gray-700">239.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">31) BBQ Beef Ribeye 100 g - ริบอาย</p><p class="text-gray-700">419.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">32) BBQ Pork 50 g - สันคอหมู</p><p class="text-gray-700">89.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">33) BBQ Pork 100 g - สันคอหมู</p><p class="text-gray-700">159.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">34) BBQ Belly Pork 50 g - หมูสามชั้น</p><p class="text-gray-700">89.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">35) BBQ Belly Pork 100 g - หมูสามชั้น</p><p class="text-gray-700">169.-</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">36) BBQ Chicken Sausage - ไส้กรอกไก่</p><p class="text-gray-700">79.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="thai-hotpot" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">THAI-HOTPOT (จิ้มจุ่ม)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">37) Hotpot Pork Set - ชุดจิ้มจุ่มหมู</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">449.-</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Pork 150 g - หมูสันคอ</li>
+                        <li>Belly Pork 150 g - หมูสามชั้น</li>
+                        <li>Egg - ไข่ไก่</li>
+                        <li>Hotpot Vegetable Set - ชุดผักจิ้มจุ่ม</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">38) Hotpot Beef & Pork Set - ชุดจิ้มจุ่มรวมหมู-เนื้อ</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">529.-</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Top Round 150 g - เนื้อพับใน</li>
+                        <li>Pork 150 g - หมูสันคอ</li>
+                        <li>Egg - ไข่ไก่</li>
+                        <li>Hotpot Vegetable Set - ชุดผักจิ้มจุ่ม</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">39) Hotpot Wagyu Beef Set - ชุดจิ้มจุ่มเนื้อ</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">619.-</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Top Round 300 g - เนื้อพับใน</li>
+                        <li>Egg - ไข่ไก่</li>
+                        <li>Hotpot Vegetable Set - ชุดผักจิ้มจุ่ม</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mt-8 mb-4 text-center">Hotpot A La Carte</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">40) Hotpot Beef Brisket 50 g - เสือร้องไห้จิ้มจุ่ม</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">41) Hotpot Beef Brisket 100 g - เสือร้องไห้จิ้มจุ่ม</p><p class="text-gray-700">179.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">42) Hotpot Beef Knuckle 50 g - ลูกมะพร้าวจิ้มจุ่ม</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">43) Hotpot Beef Knuckle 100 g - ลูกมะพร้าวจิ้มจุ่ม</p><p class="text-gray-700">179.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">44) Hotpot Beef Chuck Arm 50 g - รักบี้จิ้มจุ่ม</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">45) Hotpot Beef Chuck Arm 100 g - รักบี้จิ้มจุ่ม</p><p class="text-gray-700">199.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">46) Hotpot Beef Bavette 50 g - เนื้อบาเว็ตจิ้มจุ่ม</p><p class="text-gray-700">139.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">47) Hotpot Beef Bavette 100 g - เนื้อบาเว็ตจิ้มจุ่ม</p><p class="text-gray-700">259.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">48) Hotpot Beef Picanha 50 g - พิคานย่าจิ้มจุ่ม</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">49) Hotpot Beef Picanha 100 g - พิคานย่าจิ้มจุ่ม</p><p class="text-gray-700">309.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">50) Hotpot Beef Chuck 50 g - เนื้อสันคอจิ้มจุ่ม</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">51) Hotpot Beef Chuck 100 g - เนื้อสันคอจิ้มจุ่ม</p><p class="text-gray-700">349.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">52) Hotpot Beef Oyster Blade 50 g - ใบพายจิ้มจุ่ม</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">53) Hotpot Beef Oyster Blade 100 g - ใบพายจิ้มจุ่ม</p><p class="text-gray-700">349.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">54) Hotpot Beef Ribeye 50 g - ริบอายจิ้มจุ่ม</p><p class="text-gray-700">239.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">55) Hotpot Beef Ribeye 100 g - ริบอายจิ้มจุ่ม</p><p class="text-gray-700">419.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">56) Hotpot Pork 50 g - สันคอหมูจิ้มจุ่ม</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">57) Hotpot Pork 100 g - สันคอหมูจิ้มจุ่ม</p><p class="text-gray-700">159.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">58) Hotpot Belly Pork 50 g - หมูสามชั้นจิ้มจุ่ม</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">59) Hotpot Belly Pork 100 g - หมูสามชั้นจิ้มจุ่ม</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">60) Hotpot Chicken Sausage - ไส้กรอกไก่จิ้มจุ่ม</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">61) Hotpot Glass Noodle - วุ้นเส้นจิ้มจุ่ม</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">62) Hotpot Egg - ไข่ไก่จิ้มจุ่ม</p><p class="text-gray-700">15.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">63) Hotpot Enoki Mushrooms - เห็ดเข็มทองจิ้มจุ่ม</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">64) Hotpot Vegetable Set - ชุดผักจิ้มจุ่ม</p><p class="text-gray-700">89.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="yakitori" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">YAKITORI (เสียบไม้)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">65) Erenji - เห็ดออรินจิเสียบไม้</p><p class="text-gray-700">32.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">66) Tomato - มะเขือเทศเสียบไม้</p><p class="text-gray-700">32.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">67) Garlic - กระเทียมเสียบไม้</p><p class="text-gray-700">32.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">68) Marshmallow - มาชแมลโล่</p><p class="text-gray-700">32.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">69) Pork Grilled - หมูย่างเสียบไม้</p><p class="text-gray-700">45.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">70) Chicken Grilled - ไก่ย่างเสียบไม้</p><p class="text-gray-700">45.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">71) Wagyu Beef Grilled - วากิวเสียบไม้</p><p class="text-gray-700">69.-</p>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mt-8 mb-4 text-center">WRAP</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">72) Chicken Wrap - แรปไก่</p><p class="text-gray-700">179.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">73) Wagyu Beef Wrap - แรปเนื้อวากิว</p><p class="text-gray-700">209.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="salad-soup" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">SALAD & SOUP</h2>
+            <h3 class="text-2xl font-bold mb-4 text-center">SALAD</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">74) Chicken Salad - สลัดอกไก่</p><p class="text-gray-700">159.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">75) Boiled Egg Salad - สลัดไข่ต้ม</p><p class="text-gray-700">119.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">76) Vegetable Salad - สลัดผัก</p><p class="text-gray-700">99.-</p>
+                </div>
+            </div>
+            <h3 class="text-2xl font-bold mt-8 mb-4 text-center">SOUP</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">77) Small Miso soup - ซุปมิโซะ</p><p class="text-gray-700">42.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">78) Clear soup Tofu with pork - แกงจืดหมูสับเต้าหู้</p><p class="text-gray-700">119.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">79) Tom Yum Shrimp - ต้มยำกุ้ง</p><p class="text-gray-700">159.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">80) Tom Yum Chicken - ต้มยำไก่</p><p class="text-gray-700">119.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appetizer" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">APPETIZER</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">81) French Fries - เฟรนช์ฟราย</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">82) Fried Sausage - ไส้กรอกทอด</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">83) Fried Chicken Wing - ปีกไก่ทอด</p><p class="text-gray-700">119.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">84) Fried Karrage - ไก่คาราเกะ</p><p class="text-gray-700">119.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">85) Fried Chicken Gyoza - เกี๊ยวซ่าไก่ทอด</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">86) Crab Rangoon - เกี๊ยวทอดปูอัดครีมชีส</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">87) Edamame - ถั่วแระญี่ปุ่น</p><p class="text-gray-700">45.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="spicy" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">SPICY (ยำ)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">88) Pickled egg very spicy sauce - พริกเกลือไข่ดองสูตรเมืองจันท์</p><p class="text-gray-700">35.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">89) Kimchi - กิมจิ</p><p class="text-gray-700">49.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">90) Vegetables set - ชุดผักห่อ</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">91) Spicy Wagyu Beef Salad - ยำเนื้อวากิว</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">92) Pork Spicy Glass Noodle - ยำวุ้นเส้นหมูสับ</p><p class="text-gray-700">119.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">93) Chicken Spicy Glass Noodle - ยำวุ้นเส้นไก่</p><p class="text-gray-700">119.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">94) Shrimp Spicy Glass Noodle - ยำวุ้นเส้นกุ้ง</p><p class="text-gray-700">129.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dish-meal" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">DISH MEAL (จานเดียว)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">95) Pork Basil Fried With Rice - ข้าวกระเพราหมู</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">96) Chicken Basil Fried With Rice - ข้าวกระเพราไก่</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">97) Shrimp Basil Fried With Rice - ข้าวกระเพรากุ้ง</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">98) Beef Basil Fried With Rice - ข้าวกระเพราเนื้อ</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">99) Pork Garlic Fried With Rice - ข้าวหมูกระเทียม</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">100) Chicken Garlic Fried With Rice - ข้าวไก่กระเทียม</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">101) Shrimp Garlic Fried With Rice - ข้าวกุ้งกระเทียม</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">102) Beef Garlic Fried With Rice - ข้าวเนื้อกระเทียม</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">103) Pork Fried Rice - ข้าวผัดหมู</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">104) Chicken Fried Rice - ข้าวผัดไก่</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">105) Shrimp Fried Rice - ข้าวผัดกุ้ง</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">106) Wagyu Beef Fried Rice - ข้าวผัดมันเนื้อวากิว</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">107) Egg Fried Rice - ข้าวผัดไข่</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">108) Pork Omelette With Rice - ข้าวไข่เจียวหมู (2 ฟอง)</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">109) Chicken Omelette With Rice - ข้าวไข่เจียวไก่ (2 ฟอง)</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">110) Shrimp Omelette With Rice - ข้าวไข่เจียวกุ้ง (2 ฟอง)</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">111) Chicken Pad Thai - ผัดไทยไก่</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">112) Shrimp Pad Thai - ผัดไทยกุ้ง</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">113) Beef Fried rice + Steak pickle egg - ข้าวหน้าเนื้อวากิว + ไข่ดอง</p><p class="text-gray-700">259.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">114) Grilled Beef + spicy dipping sauce - เนื้อย่างจิ้มแจ่ว</p><p class="text-gray-700">199.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">115) Thai Omelet - ไข่เจียว 1 ฟอง</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">116) Pickled Egg - ไข่ดอง</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">117) Pork Thai Omelet - ไข่เจียวหมู (กับข้าว) (2ฟอง)</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">118) Chicken Thai Omelet - ไข่เจียวไก่ (กับข้าว) (2 ฟอง)</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">119) Shrimp Thai Omelet - ไข่เจียวกุ้ง (กับข้าว) (2 ฟอง)</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">120) Pork Basil Fried - กระเพราหมู (กับข้าว)</p><p class="text-gray-700">149.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">121) Chicken Basil Fried - กระเพราไก่ (กับข้าว)</p><p class="text-gray-700">149.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">122) Beef Basil Fried - กระเพราเนื้อ (กับข้าว)</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">123) Shrimp Basil Fried - กระเพรากุ้ง (กับข้าว)</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">124) Fried Egg - ไข่ดาว</p><p class="text-gray-700">22.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">125) Boiled Egg - ไข่ต้ม</p><p class="text-gray-700">22.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">126) Japanese Rice - ข้าวญี่ปุ่น</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">127) Thai Rice - ข้าวสวย</p><p class="text-gray-700">20.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="isaan-food" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">LOCAL ISAAN FOOD</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">128) Papaya salad with fermented fish - ส้มตำปลาร้า</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">129) Papaya salad with fermented fish, shrimp - ส้มตำปลาร้ากุ้งสุก</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">130) Thai Papaya salad - ส้มตำไทย</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">131) Spicy Minced Pork Salad - ลาบหมู</p><p class="text-gray-700">149.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">132) Spicy Minced Chicken Salad - ลาบไก่</p><p class="text-gray-700">149.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">133) Spicy Minced Wagyu Beef Salad - ลาบเนื้อ</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">134) Spicy Wagyu Beef Soup - ต้มแซ่บเนื้อ</p><p class="text-gray-700">169.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vegetarian" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">VEGETARIAN</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">135) (Vegan) Deep fried Vegetable Gyoza - เกี๊ยวซ่าผักเจ</p><p class="text-gray-700">99.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">136) (Vegan) Deep fried Tofu - เต้าหู้ทอดเจ</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">137) (Vegan) Mix Vegetable Salad Tofu - สลัดผักเต้าหู้เจ</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">138) (Vegan) Clear soup with mix veg. Tofu - แกงจืดเต้าหู้เจ</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">139) (Vegan) Stir Fried Garlic Tofu + rice - ผัดกระเทียมเต้าหู้+ข้าวเจ</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">140) (Vegan) Spicy Basil Tofu + rice - ข้าวกระเพราเต้าหู้เจ</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">141) (Vegan) Spicy Basil Mushroom + rice - ข้าวกระเพราเห็ดออรินจิ</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">142) (Vegan) Stir fry Vegetable with Garlic sauce - ผัดผักเจ</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">143) (Vegan) Fried rice with Tofu - ข้าวผัดเต้าหู้</p><p class="text-gray-700">89.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="drinks" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">DRINKS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">144) Beer Singha Bottle 630 ml - เบียร์สิงห์ใหญ่</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">145) Beer Leo Bottle 320 ml - เบียร์ลีโอเล็ก</p><p class="text-gray-700">59.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">146) Beer Chang Bottle 630 ml - เบียร์ช้างใหญ่</p><p class="text-gray-700">79.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">147) Beer Chang Bottle 320 ml - เบียร์ช้างเล็ก</p><p class="text-gray-700">59.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">148) Beer White IPA Mahanakorn 490 ml - มหานคร White IPA</p><p class="text-gray-700">155.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">149) Beer Pale Ale Mahanakorn 490 ml - มหานคร Pale Ale</p><p class="text-gray-700">176.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">150) Beer Cider Cloudy Lemon 500 ml - ไซเดอร์คลาวดี้เลมอน</p><p class="text-gray-700">250.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">151) Beer Cider Marshmallow Brothers 500 ml - ไซเดอร์มาชแมลโลว์</p><p class="text-gray-700">250.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">152) Beer Cider Wild Fruit Brothers 500 ml - โซเดอร์ไวล์ฟรุ๊ต</p><p class="text-gray-700">250.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">153) Beer Cider Toffee Apple Brothers 500 ml - ไซเดอร์ทอฟฟี่แอปเปิล</p><p class="text-gray-700">250.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">154) Hoegarden White 500 ml - ฮการ์เด้น</p><p class="text-gray-700">165.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">155) Hoegarden Rose 500 ml - โฮกาเด้นโร</p><p class="text-gray-700">165.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">156) Corona Beer 330 ml - โคโรน่า</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">157) Hineken 330 ml - ไฮเนเก้น</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">158) Red Wine (glass) - ไวน์แดงแก้ว</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">159) White Wine (glass) - ไวน์ขาวแก้ว</p><p class="text-gray-700">109.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">160) Sangsom Rum 170 ml - เหล้าแสงโสมแบน</p><p class="text-gray-700">299.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">161) Brandy Regency 300 ml - เหล้ารีเจนซี่แบน</p><p class="text-gray-700">599.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">162) Red Wine VOLCANES (Cabernet Sauvignon) bot - ไวน์แดงขวด</p><p class="text-gray-700">590.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">163) Red Wine OTTERBROOK (Shiraz) bot - ไวน์แดงขวด</p><p class="text-gray-700">690.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">164) Draft Beer Pitcher - เบียร์สดเหยือก</p><p class="text-gray-700">199.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">165) Strawberry Soju 360 ml - โซจูสตรอเบอรี่</p><p class="text-gray-700">129.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">166) Green Grape Soju 360 ml - โซจูองุ่นเขียว</p><p class="text-gray-700">129.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">167) Fresh Soju 360 ml - โซจูเฟรช</p><p class="text-gray-700">129.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">168) Soda - โซดา</p><p class="text-gray-700">30.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">169) Schweppes Lime Soda - ชเวปโซดามะนาว</p><p class="text-gray-700">30.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">170) Schweppes Ginger Soda - ชเวปโซดาจิงเจอร์</p><p class="text-gray-700">30.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">171) Coke 500 ml - โค้ก</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">172) Coke Zero 450 ml - โค้กซีโร่</p><p class="text-gray-700">29.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">173) Ice Bucket - น้ำแข็งถัง</p><p class="text-gray-700">40.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">174) Ice Glass - น้ำแข็งแก้ว</p><p class="text-gray-700">5.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">175) Water 600 ml - น้ำเปล่า</p><p class="text-gray-700">15.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">176) Hot Tea - ชาร้อน</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">177) Lemon Ice Tea - ชามะนาว</p><p class="text-gray-700">59.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">178) Hot Espresso - กาแฟร้อน</p><p class="text-gray-700">59.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">179) On The Rock (Whiskey) - เหล้าวิสกี้ ออนเดอะร็อก</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">180) On The Rock (Plum Wine) - เหล้าบ๊วย ออนเดอะร็อก</p><p class="text-gray-700">169.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">181) Long Island Cocktail - ลองไอซ์แลนด์ค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">182) Margarita Cocktail - มาการิต้าค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">183) Pina Colada Cocktail - พีน่าโคลาด้าค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">184) Rum Punch Cocktail - รัมพันช์ค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">185) Spiked Thai Tea Cocktail - สไปค์ไทยทีค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">186) Lemon Tea Cocktail - เลมอนทีค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">187) Ocean Blue Cocktail - โอเชี่ยนบลูค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">188) Gin Tonic Cocktail - จินโทนิคค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">189) Mai Tai Cocktail - ไหมไทค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">190) Rooftop Lemonade Cocktail - รูฟท็อปเลมอเนดค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">191) Pink Lady Cocktail - พิงค์เลดี้ค็อกเทล</p><p class="text-gray-700">189.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">192) Blue Lagoon Mocktail - บลูลากูนม็อกเทล</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">193) Lychee Tea Mocktail - ลิ้นจี่ทีม็อกเทล</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">194) Coconut Mojito Mocktail - โคโคนัทโมจิโตม็อกเทล</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">195) Coffee Lemonade Mocktail - คอฟฟี่เลมอเนดม็อกเทล</p><p class="text-gray-700">89.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">196) Vodka Shot - วอดก้าช็อต</p><p class="text-gray-700">100.-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dessert" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center menu-category-title">DESSERT</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">197) Mango Sticky Rice - ข้าวเหนียวมะม่วง</h3>
+                    <p class="text-lg font-bold text-gray-700 mb-4">119.-</p>
+                    <p class="text-gray-600">
+                        เพลิดเพลินกับขนมไทยคลาสสิกที่มาพร้อมข้าวเหนียวมูนกะทิหอมหวาน และมะม่วงสุกฉ่ำ
+                        เพิ่มความสวยงามด้วยสีม่วงจากดอกอัญชัน เป็นของหวานที่อร่อยเต็มไปด้วยรสชาติหวานสดชื่นแบบทรอปิคอลของฤดูร้อน!
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">198) Lime Ice-cream scoop - ไอศกรีมมะนาวสกู๊ป</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">199) Cookie & Cream Ice-cream scoop - ไอศกรีมคุ้กกี้ ครีมสกู๊ป</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">200) Vanilla Ice-cream scoop - ไอศกรีมวานิลลาสกู๊ป</p><p class="text-gray-700">69.-</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center">
+                    <p class="font-semibold">201) Chocolate Ice-cream scoop - ไอศกรีมช็อกโกแลตสกู๊ป</p><p class="text-gray-700">69.-</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-8">
+        <p>&copy; 2025 Beyond Beef Bar. All rights reserved.</p>
+        <p class="mt-2">Contact: +669-2182-4326</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
